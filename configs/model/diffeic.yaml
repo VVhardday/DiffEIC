@@ -97,6 +97,7 @@ params:
     params:
       freeze: True
       layer: "penultimate"
+      cond_weight_path: /home/zuoyou/.cache/huggingface/hub/open_clip_pytorch_model.bin
 
   preprocess_config:
     target: model.lfgcm.LFGCM

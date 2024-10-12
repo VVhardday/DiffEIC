@@ -16,8 +16,8 @@ lightning:
   seed: 231
   
   trainer:
-    accelerator: ddp
-    precision: 32
+    accelerator: gpu
+    precision: 16
     # Indices of GPUs used for training.
     gpus: [0]
     # Path to save logs and checkpoints.

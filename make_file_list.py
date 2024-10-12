@@ -12,12 +12,12 @@ parser.add_argument("--follow_links", action="store_true")
 args = parser.parse_args()
 
 train_files = list_image_files(
-    args.train_folder, exts=(".jpg", ".png", ".jpeg"), follow_links=args.follow_links,
+    args.train_folder, exts=(".jpg", ".png", ".jpeg", ".JPEG"), follow_links=args.follow_links,
     log_progress=True, log_every_n_files=10000
 )
 
 valid_files = list_image_files(
-    args.valid_folder, exts=(".jpg", ".png", ".jpeg"), follow_links=args.follow_links,
+    args.valid_folder, exts=(".jpg", ".png", ".jpeg", ".JPEG"), follow_links=args.follow_links,
     log_progress=True, log_every_n_files=10000
 )
 

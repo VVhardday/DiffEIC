@@ -2,7 +2,7 @@ dataset:
   target: dataset.licdataset.LICDataset
   params:
     # Path to the file list.
-    file_list: ./datalists/train.list
+    file_list: ./save_folder/train.list
     out_size: 512
     crop_type: random
     use_hflip: True
